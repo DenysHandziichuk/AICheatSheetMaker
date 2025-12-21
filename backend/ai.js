@@ -1,7 +1,7 @@
 import { Groq } from 'groq-sdk'
 
 const groq = new Groq({
-  apiKey: "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"
+  apiKey: process.env.GROQ_API_KEY
 })
 
 export async function generateCheatSheet(text, level = "Grade 10") {
