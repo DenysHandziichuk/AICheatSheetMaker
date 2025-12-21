@@ -1,7 +1,7 @@
 import express from 'express'
 import 'dotenv/config'
 import cors from 'cors'
-import { generateCheatSheet } from './ai.js'
+import { generateCheatSheet } from './generateCheatSheet.js'
 
 const app = express()
 
@@ -10,20 +10,26 @@ app.use(express.json())
 
 app.post('/cheatsheet', async (req, res) => {
   try {
-    const { text, level } = req.body
+    console.log("REQ BODY:", req.body)
+
+    const { text, level, length } = req.body 
 
     if (!text) {
       return res.status(400).json({ error: "Text is required" })
     }
 
-    const result = await generateCheatSheet(text, level)
+    const result = await generateCheatSheet(
+      text,
+      level || "academic",
+      length || "medium"
+    )
 
     res.json({ result })
   } catch (err) {
-    console.error("AI ERROR:", err)   // 👈 ADD THIS
+    console.error("AI ERROR:", err)
     res.status(500).json({
       error: "AI generation failed",
-      details: err.message           // 👈 ADD THIS
+      details: err.message
     })
   }
 })
