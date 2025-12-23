@@ -1,0 +1,10 @@
+.loading-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-text {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #aaa;
+}
