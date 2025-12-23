@@ -1,0 +1,8 @@
+.settings {
+  display: flex;
+  gap: 16px;
+}
+
+.settings select {
+  padding: 8px;
+}
