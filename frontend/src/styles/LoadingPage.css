@@ -4,7 +4,8 @@
 }
 
 .loading-text {
-  margin-top: 12px;
-  font-size: 14px;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 3rem;
   color: #aaa;
 }
