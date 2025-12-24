@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import '../styles/PageHeader.css';
+import { Lightbulb } from "@theme-toggles/react";
+import "@theme-toggles/react/css/Lightbulb.css";
+import "../styles/PageHeader.css";
 
 export default function PageHeader({ theme, toggleTheme }) {
   return (
@@ -7,13 +9,14 @@ export default function PageHeader({ theme, toggleTheme }) {
       <Link to="/" className="logo">
         AICheatSheet<span>Maker</span>
       </Link>
-      
-      <button 
-  className={`theme-toggler ${theme}`} 
-  onClick={toggleTheme}
->
-  <div className="sun-moon"></div>
-</button>
+
+      <Lightbulb
+        toggled={theme === "dark"}
+        toggle={toggleTheme}
+        duration={750}
+        reverse
+        className="lightbulb-toggle"
+      />
     </header>
   );
 }
