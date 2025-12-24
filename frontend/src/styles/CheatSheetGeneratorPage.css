@@ -1,20 +1,148 @@
+/* ===== Container ===== */
+
 .generator-container {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-top: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
 }
+
+/* ===== Header ===== */
+
+.generator-header {
+  margin-bottom: 1.75rem;
+}
+
+.generator-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.generator-header p {
+  margin-top: 0.4rem;
+  color: var(--text-muted);
+  max-width: 640px;
+}
+
+/* ===== Steps ===== */
+
+.generator-steps {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.generator-steps span {
+  position: relative;
+}
+
+.generator-steps .active {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+/* ===== Panels ===== */
 
 .panel {
-  background-color: var(--bg-surface); 
+  background: var(--bg-surface);
   border: var(--glass-border);
-  border-radius: 16px;
+  border-radius: 1rem;
   padding: 1.5rem;
-  transition: background-color 0.3s ease;
+  box-shadow: var(--panel-shadow);
 }
 
-@media (max-width: 850px) {
-  .generator-container { grid-template-columns: 1fr; }
+.panel + .panel {
+  margin-top: 1.5rem;
+}
+
+/* ===== Input ===== */
+
+.input-wrapper {
+  margin-bottom: 0.5rem;
+}
+
+.input-hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* ===== Button ===== */
+
+.generate-btn-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 640px) {
+  .generator-steps {
+    gap: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .generate-btn-container {
+    justify-content: stretch;
+  }
+}
+
+.generator-progress {
+  margin-bottom: 2.25rem;
+}
+
+.progress-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress-title {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.progress-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.progress-bar {
+  height: 7px;
+  background: var(--bg-surface-2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--accent-primary),
+    var(--accent-hover)
+  );
+  border-radius: inherit;
+  transition: width 0.25s ease;
+}
+
+.progress-steps {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.step.active {
+  color: var(--accent-primary);
+  font-weight: 600;
 }
