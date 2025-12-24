@@ -5,6 +5,14 @@
   --text-main: #ffffff;
   --text-muted: #a0a0a5;
   --glass-border: 1px solid #2d2d30;
+  --accent-primary: #3b82f6;
+  --accent-primary-bg: color-mix(in srgb, var(--accent-primary) 15%, transparent);
+
+  --accent-warning: #f59e0b;
+  --accent-warning-bg: color-mix(in srgb, var(--accent-warning) 15%, transparent);
+
+  --accent-danger: #ef4444;
+  --accent-danger-bg: color-mix(in srgb, var(--accent-danger) 15%, transparent);
   --accent: #3b82f6;
   --accent-hover: #2563eb;
   --accent-soft: color-mix(in srgb, var(--accent) 15%, transparent);
@@ -17,6 +25,14 @@
   --bg-surface: #ffffff;
   --bg-surface-2: #fcfcfd;
   --text-main: #18181b;
+  --accent-primary: #4f46e5;
+  --accent-primary-bg: color-mix(in srgb, var(--accent-primary) 15%, transparent);
+
+  --accent-warning: #d97706;
+  --accent-warning-bg: color-mix(in srgb, var(--accent-warning) 15%, transparent);
+
+  --accent-danger: #dc2626;
+  --accent-danger-bg: color-mix(in srgb, var(--accent-danger) 15%, transparent);
   --accent-soft: color-mix(in srgb, var(--accent) 15%, transparent);
   --accent-border: color-mix(in srgb, var(--accent) 60%, transparent);
   --text-muted: #71717a;
