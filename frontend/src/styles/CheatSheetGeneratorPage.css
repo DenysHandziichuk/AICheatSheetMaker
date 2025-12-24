@@ -1,5 +1,20 @@
-.generator-page {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.generator-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+}
+
+.panel {
+  background-color: var(--bg-surface); 
+  border: var(--glass-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 850px) {
+  .generator-container { grid-template-columns: 1fr; }
 }
