@@ -1,14 +1,30 @@
 import { useCheatSheet } from "../context/CheatSheetContext";
 import ReactMarkdown from "react-markdown";
 import '../styles/ResultPage.css';
+import { useNavigate } from "react-router-dom"
+
 
 export default function ResultPage() {
+  const navigate = useNavigate()
   const { result, error } = useCheatSheet();
 
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(result);
-    alert("Copied to clipboard!");
-  };
+  const copyToClipboard = async () => {
+  if (!result) return
+
+  try {
+    await navigator.clipboard.writeText(result)
+    alert("Copied to clipboard!")
+  } catch {
+    alert("Failed to copy")
+  }
+}
+
+  
+
+  const tryAgain = () => {
+    navigate("/generate")
+  }
+
 
   if (error) return <div className="result-card error-text">{error}</div>;
 
@@ -21,7 +37,10 @@ export default function ResultPage() {
   </h1>
 
   <div className="action-right">
-    <button className="try-again-btn">Try Again</button>
+    <button className="try-again-btn" onClick={tryAgain}>
+      Try Again
+    </button>
+
     <button
       className="action-icon-btn"
       onClick={copyToClipboard}
@@ -31,6 +50,7 @@ export default function ResultPage() {
     </button>
   </div>
 </div>
+
       <div className="result-content">
         <ReactMarkdown>{result}</ReactMarkdown>
       </div>
