@@ -1,9 +1,53 @@
+:root[data-theme='dark'] {
+  --bg-deep: #0a0a0b;
+  --bg-surface: #161618;
+  --bg-surface-2: #212124;
+  --text-main: #ffffff;
+  --text-muted: #a0a0a5;
+  --glass-border: 1px solid #2d2d30;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-soft: color-mix(in srgb, var(--accent) 15%, transparent);
+  --accent-border: color-mix(in srgb, var(--accent) 60%, transparent);
+  --panel-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+:root[data-theme='light'] {
+  --bg-deep: #f4f4f7;
+  --bg-surface: #ffffff;
+  --bg-surface-2: #fcfcfd;
+  --text-main: #18181b;
+  --accent-soft: color-mix(in srgb, var(--accent) 15%, transparent);
+  --accent-border: color-mix(in srgb, var(--accent) 60%, transparent);
+  --text-muted: #71717a;
+  --glass-border: 1px solid #e4e4e7;
+  --accent: #4f46e5; 
+  --accent-hover: #4338ca;
+  --panel-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
 .app-layout {
   min-height: 100vh;
+  background-color: var(--bg-deep); 
+  color: var(--text-main);
+  transition: background-color 0.3s ease;
 }
 
 .page-body {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 24px;
+  background-color: var(--bg-deep);
+}
+
+.logo span {
+  color: var(--accent);
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+}
+
+.option-btn.active, .generate-button {
+  background: var(--accent) !important;
+  color: white !important;
+}
+
+.generate-button:hover {
+  background: var(--accent-hover) !important;
 }
