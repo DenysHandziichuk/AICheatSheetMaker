@@ -5,9 +5,9 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="landing-page">
       <h1>Turn any topic into a cheat sheet</h1>
-      <button onClick={() => navigate("/generate")}>
+      <button onClick={() => navigate("/generate")} className="get-started-btn">
         Get Started
       </button>
     </div>
