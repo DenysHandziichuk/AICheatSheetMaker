@@ -65,6 +65,7 @@ export default function LoadingPage() {
     <div className="loading-page">
       <Skeleton />
       <p className="loading-text">Generating cheat sheet…</p>
+      <span class="loader"></span>
     </div>
   );
 }
