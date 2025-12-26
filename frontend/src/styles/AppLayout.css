@@ -18,9 +18,25 @@
   --accent-soft: color-mix(in srgb, var(--accent) 15%, transparent);
   --accent-border: color-mix(in srgb, var(--accent) 60%, transparent);
   --panel-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  --sonner-bg: var(--bg-surface);
+  --sonner-text: var(--text-main);
+  --sonner-border: var(--glass-border);
+
+  --sonner-success: var(--accent-primary);
+  --sonner-error: var(--accent-danger);
+  --sonner-warning: var(--accent-warning);
+  --sonner-info: var(--accent);
 }
 
 :root[data-theme='light'] {
+  --sonner-bg: var(--bg-surface);
+  --sonner-text: var(--text-main);
+  --sonner-border: var(--glass-border);
+
+  --sonner-success: var(--accent-primary);
+  --sonner-error: var(--accent-danger);
+  --sonner-warning: var(--accent-warning);
+  --sonner-info: var(--accent);
   --bg-deep: #f4f4f7;
   --bg-surface: #ffffff;
   --bg-surface-2: #fcfcfd;
