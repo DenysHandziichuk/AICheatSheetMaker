@@ -1,6 +1,7 @@
 .loading-page {
-  display: flex;
-  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
 }
 
 .loading-text {
