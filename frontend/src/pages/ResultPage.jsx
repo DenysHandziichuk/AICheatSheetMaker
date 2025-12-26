@@ -2,6 +2,8 @@ import { useCheatSheet } from "../context/CheatSheetContext";
 import ReactMarkdown from "react-markdown";
 import '../styles/ResultPage.css';
 import { useNavigate } from "react-router-dom"
+import { toast } from "sonner";
+import { Toaster } from "sonner";
 
 
 export default function ResultPage() {
@@ -13,9 +15,9 @@ export default function ResultPage() {
 
   try {
     await navigator.clipboard.writeText(result)
-    alert("Copied to clipboard!")
+    toast.success("Copied to clipboard", { duration: 1200 });
   } catch {
-    alert("Failed to copy")
+    toast.error("Failed to copy", { duration: 1200 });
   }
 }
 
@@ -41,13 +43,14 @@ export default function ResultPage() {
       Try Again
     </button>
 
-    <button
-      className="action-icon-btn"
-      onClick={copyToClipboard}
-      title="Copy Content"
-    >
-      📋 Copy
-    </button>
+    <Toaster position="top-center" richColors />
+<button
+  className="action-icon-btn"
+  onClick={copyToClipboard}
+  title="Copy Content"
+>
+  📋 Copy
+</button>
   </div>
 </div>
 
