@@ -140,3 +140,37 @@
     justify-content: flex-end;
   }
 }
+
+[data-sonner-toast] {
+  background: color-mix(in srgb, var(--sonner-bg) 88%, transparent);
+  color: var(--sonner-text);
+  border: var(--sonner-border);
+  border-radius: 12px;
+  box-shadow: var(--panel-shadow);
+  backdrop-filter: blur(10px);
+
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 14px;
+}
+
+
+@media (max-width: 640px) {
+  [data-sonner-toast] {
+    max-width: calc(100vw - 24px);
+    width: 100%;
+
+    font-size: 15px;
+    padding: 14px 16px;
+    border-radius: 14px;
+
+    backdrop-filter: blur(6px); 
+  }
+}
+
+
+@media (max-width: 640px) {
+  [data-sonner-toaster] {
+    padding: 0 12px;
+  }
+}
