@@ -6,10 +6,18 @@
   --text-muted: #a0a0a5;
   --glass-border: 1px solid #2d2d30;
   --accent-primary: #3b82f6;
-  --accent-primary-bg: color-mix(in srgb, var(--accent-primary) 15%, transparent);
+  --accent-primary-bg: color-mix(
+    in srgb,
+    var(--accent-primary) 15%,
+    transparent
+  );
 
   --accent-warning: #f59e0b;
-  --accent-warning-bg: color-mix(in srgb, var(--accent-warning) 15%, transparent);
+  --accent-warning-bg: color-mix(
+    in srgb,
+    var(--accent-warning) 15%,
+    transparent
+  );
 
   --accent-danger: #ef4444;
   --accent-danger-bg: color-mix(in srgb, var(--accent-danger) 15%, transparent);
@@ -17,7 +25,7 @@
   --accent-hover: #2563eb;
   --accent-soft: color-mix(in srgb, var(--accent) 15%, transparent);
   --accent-border: color-mix(in srgb, var(--accent) 60%, transparent);
-  --panel-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  --panel-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   --sonner-bg: var(--bg-surface);
   --sonner-text: var(--text-main);
   --sonner-border: var(--glass-border);
@@ -42,10 +50,18 @@
   --bg-surface-2: #fcfcfd;
   --text-main: #18181b;
   --accent-primary: #4f46e5;
-  --accent-primary-bg: color-mix(in srgb, var(--accent-primary) 15%, transparent);
+  --accent-primary-bg: color-mix(
+    in srgb,
+    var(--accent-primary) 15%,
+    transparent
+  );
 
   --accent-warning: #d97706;
-  --accent-warning-bg: color-mix(in srgb, var(--accent-warning) 15%, transparent);
+  --accent-warning-bg: color-mix(
+    in srgb,
+    var(--accent-warning) 15%,
+    transparent
+  );
 
   --accent-danger: #dc2626;
   --accent-danger-bg: color-mix(in srgb, var(--accent-danger) 15%, transparent);
@@ -53,14 +69,14 @@
   --accent-border: color-mix(in srgb, var(--accent) 60%, transparent);
   --text-muted: #71717a;
   --glass-border: 1px solid #e4e4e7;
-  --accent: #4f46e5; 
+  --accent: #4f46e5;
   --accent-hover: #4338ca;
-  --panel-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  --panel-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .app-layout {
   min-height: 100vh;
-  background-color: var(--bg-deep); 
+  background-color: var(--bg-deep);
   color: var(--text-main);
   transition: background-color 0.3s ease;
 }
@@ -75,7 +91,8 @@
   -webkit-text-fill-color: initial !important;
 }
 
-.option-btn.active, .generate-button {
+.option-btn.active,
+.generate-button {
   background: var(--accent) !important;
   color: white !important;
 }

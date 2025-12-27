@@ -1,10 +1,10 @@
-import { Routes, Route } from "react-router-dom";
-import AppLayout from "./components/AppLayout";
+import { Routes, Route } from 'react-router-dom';
+import AppLayout from './components/AppLayout';
 
-import LandingPage from "./pages/LandingPage";
-import CheatSheetGeneratorPage from "./pages/CheatSheetGeneratorPage";
-import LoadingPage from "./pages/LoadingPage";
-import ResultPage from "./pages/ResultPage";
+import LandingPage from './pages/LandingPage';
+import CheatSheetGeneratorPage from './pages/CheatSheetGeneratorPage';
+import LoadingPage from './pages/LoadingPage';
+import ResultPage from './pages/ResultPage';
 
 export default function App() {
   return (

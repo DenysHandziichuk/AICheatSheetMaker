@@ -1,5 +1,5 @@
 export function buildPrompt(text, level, rules) {
-    return `
+  return `
     You are a study assistant.
 
     Create a concise cheat sheet for the topic below.
@@ -21,5 +21,5 @@ export function buildPrompt(text, level, rules) {
 
     FORMAT THE FOLLOWING TEXT ONLY:
     ${text}
-    `
+    `;
 }

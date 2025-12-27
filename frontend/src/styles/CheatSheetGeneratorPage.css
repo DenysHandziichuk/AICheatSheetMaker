@@ -1,12 +1,8 @@
-/* ===== Container ===== */
-
 .generator-container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem 3rem;
 }
-
-/* ===== Header ===== */
 
 .generator-header {
   margin-bottom: 1.75rem;
@@ -25,8 +21,6 @@
   max-width: 640px;
 }
 
-/* ===== Steps ===== */
-
 .generator-steps {
   display: flex;
   gap: 1.25rem;
@@ -44,8 +38,6 @@
   font-weight: 600;
 }
 
-/* ===== Panels ===== */
-
 .panel {
   background: var(--bg-surface);
   border: var(--glass-border);
@@ -58,8 +50,6 @@
   margin-top: 1.5rem;
 }
 
-/* ===== Input ===== */
-
 .input-wrapper {
   margin-bottom: 0.5rem;
 }
@@ -70,15 +60,11 @@
   margin-top: 0.25rem;
 }
 
-/* ===== Button ===== */
-
 .generate-btn-container {
   margin-top: 1.5rem;
   display: flex;
   justify-content: flex-end;
 }
-
-/* ===== Mobile ===== */
 
 @media (max-width: 640px) {
   .generator-steps {

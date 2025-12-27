@@ -13,27 +13,26 @@ export const LENGTH_PRESETS = {
   },
 };
 
-
 export const LEVEL_PRESETS = {
   basic: {
-    tone: "simple",
+    tone: 'simple',
     maxWordsPerBullet: 12,
-    allowedVocabulary: "common",
-    sentenceStyle: "short",
-    explanationDepth: "minimal",
+    allowedVocabulary: 'common',
+    sentenceStyle: 'short',
+    explanationDepth: 'minimal',
   },
   academic: {
-    tone: "neutral",
+    tone: 'neutral',
     maxWordsPerBullet: 18,
-    allowedVocabulary: "academic",
-    sentenceStyle: "complete",
-    explanationDepth: "standard",
+    allowedVocabulary: 'academic',
+    sentenceStyle: 'complete',
+    explanationDepth: 'standard',
   },
   formal: {
-    tone: "formal",
+    tone: 'formal',
     maxWordsPerBullet: 25,
-    allowedVocabulary: "formal",
-    sentenceStyle: "precise",
-    explanationDepth: "concise",
+    allowedVocabulary: 'formal',
+    sentenceStyle: 'precise',
+    explanationDepth: 'concise',
   },
 };

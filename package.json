@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "@theme-toggles/react": "^4.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   }
 }

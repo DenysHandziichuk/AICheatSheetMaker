@@ -1,4 +1,4 @@
-import "../styles/TextareaInput.css"
+import '../styles/TextareaInput.css';
 
 export default function TextareaInput({ value, onChange }) {
   return (
@@ -9,5 +9,5 @@ export default function TextareaInput({ value, onChange }) {
       onChange={(e) => onChange(e.target.value)}
       rows={6}
     />
-  )
+  );
 }

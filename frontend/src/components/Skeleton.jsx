@@ -1,4 +1,4 @@
-import '../styles/Skeleton.css'
+import '../styles/Skeleton.css';
 
 export default function Skeleton() {
   return (

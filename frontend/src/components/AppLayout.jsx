@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { Outlet } from "react-router-dom";
-import PageHeader from "./PageHeader";
+import { useState, useEffect } from 'react';
+import { Outlet } from 'react-router-dom';
+import PageHeader from './PageHeader';
 import '../styles/AppLayout.css';
 
 export default function AppLayout() {

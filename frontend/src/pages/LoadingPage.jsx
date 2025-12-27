@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
-import Skeleton from "../components/Skeleton";
-import { useCheatSheet } from "../context/CheatSheetContext";
-import '../styles/LoadingPage.css'
+import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Skeleton from '../components/Skeleton';
+import { useCheatSheet } from '../context/CheatSheetContext';
+import '../styles/LoadingPage.css';
 
 export default function LoadingPage() {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ export default function LoadingPage() {
     hasRun.current = true;
 
     if (!inputText.trim()) {
-      navigate("/generate");
+      navigate('/generate');
       return;
     }
 
@@ -31,9 +31,9 @@ export default function LoadingPage() {
       try {
         setIsLoading(true);
 
-        const response = await fetch("http://localhost:3001/cheatsheet", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+        const response = await fetch('http://localhost:3001/cheatsheet', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             text: inputText,
             level,
@@ -42,17 +42,17 @@ export default function LoadingPage() {
         });
 
         if (!response.ok) {
-          throw new Error("Failed to generate cheat sheet");
+          throw new Error('Failed to generate cheat sheet');
         }
 
         const data = await response.json();
-        
+
         setResult(data.result);
-        setInputText("");
-        navigate("/result");
+        setInputText('');
+        navigate('/result');
       } catch (err) {
-        setError(err.message || "Something went wrong");
-        navigate("/result");
+        setError(err.message || 'Something went wrong');
+        navigate('/result');
       } finally {
         setIsLoading(false);
       }

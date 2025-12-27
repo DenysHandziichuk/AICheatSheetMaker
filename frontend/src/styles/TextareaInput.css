@@ -12,18 +12,28 @@
   transition: border 0.2s;
 }
 
-.textarea:focus { border-color: var(--accent); }
+.textarea:focus {
+  border-color: var(--accent);
+}
 
-.settings-container { display: flex; flex-direction: column; gap: 1.5rem; }
-.setting-title { 
-  display: block; 
-  font-size: 0.8rem; 
-  text-transform: uppercase; 
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.setting-title {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
   color: var(--text-muted);
   margin-bottom: 0.5rem;
 }
 
-.options-grid { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.options-grid {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
 
 .option-btn {
   padding: 0.5rem 1rem;

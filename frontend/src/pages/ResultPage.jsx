@@ -1,64 +1,57 @@
-import { useCheatSheet } from "../context/CheatSheetContext";
-import ReactMarkdown from "react-markdown";
+import { useCheatSheet } from '../context/CheatSheetContext';
+import ReactMarkdown from 'react-markdown';
 import '../styles/ResultPage.css';
-import { useNavigate } from "react-router-dom"
-import { toast } from "sonner";
-import { Toaster } from "sonner";
-
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'sonner';
+import { Toaster } from 'sonner';
 
 export default function ResultPage() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const { result, error } = useCheatSheet();
 
   const copyToClipboard = async () => {
-  if (!result) return
+    if (!result) return;
 
-  try {
-    await navigator.clipboard.writeText(result)
-    toast.success("Copied to clipboard", { duration: 1200 });
-  } catch {
-    toast.error("Failed to copy", { duration: 1200 });
-  }
-}
-
-  
+    try {
+      await navigator.clipboard.writeText(result);
+      toast.success('Copied to clipboard', { duration: 1200 });
+    } catch {
+      toast.error('Failed to copy', { duration: 1200 });
+    }
+  };
 
   const tryAgain = () => {
-    navigate("/generate")
-  }
-
+    navigate('/generate');
+  };
 
   if (error) return <div className="result-card error-text">{error}</div>;
 
   return (
     <div className="main-container-result">
-        <div className="result-card">
-      <div className="action-bar">
-  <h1 className="generated-notification">
-    Cheat Sheet Generated! 🎉
-  </h1>
+      <div className="result-card">
+        <div className="action-bar">
+          <h1 className="generated-notification">Cheat Sheet Generated! 🎉</h1>
 
-  <div className="action-right">
-    <button className="try-again-btn" onClick={tryAgain}>
-      Try Again
-    </button>
+          <div className="action-right">
+            <button className="try-again-btn" onClick={tryAgain}>
+              Try Again
+            </button>
 
-    <Toaster position="top-center" richColors />
-<button
-  className="action-icon-btn"
-  onClick={copyToClipboard}
-  title="Copy Content"
->
-  📋 Copy
-</button>
-  </div>
-</div>
+            <Toaster position="top-center" richColors />
+            <button
+              className="action-icon-btn"
+              onClick={copyToClipboard}
+              title="Copy Content"
+            >
+              📋 Copy
+            </button>
+          </div>
+        </div>
 
-      <div className="result-content">
-        <ReactMarkdown>{result}</ReactMarkdown>
+        <div className="result-content">
+          <ReactMarkdown>{result}</ReactMarkdown>
+        </div>
       </div>
     </div>
-    </div>
-    
   );
 }

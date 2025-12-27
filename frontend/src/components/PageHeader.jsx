@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { Lightbulb } from "@theme-toggles/react";
-import "@theme-toggles/react/css/Lightbulb.css";
-import "../styles/PageHeader.css";
+import { Link } from 'react-router-dom';
+import { Lightbulb } from '@theme-toggles/react';
+import '@theme-toggles/react/css/Lightbulb.css';
+import '../styles/PageHeader.css';
 
 export default function PageHeader({ theme, toggleTheme }) {
   return (
@@ -11,7 +11,7 @@ export default function PageHeader({ theme, toggleTheme }) {
       </Link>
 
       <Lightbulb
-        toggled={theme === "dark"}
+        toggled={theme === 'dark'}
         toggle={toggleTheme}
         duration={750}
         reverse
