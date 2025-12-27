@@ -49,3 +49,9 @@ This project focuses on **structure first**, making information easier to unders
 ---
 
 ## 🚀 Prewiew
+
+### Dark Theme
+![Dark Theme](assets/darkThemeScreenshot.png)
+
+### Light Theme
+![Light Theme](assets/lightThemeScreenshot.png)
