@@ -9,9 +9,6 @@ const groq = new Groq({
 export async function generateCheatSheet(text, level, length) {
   const rules = getMergedRules(level, length);
 
-  // 🔴 ADD THIS TEMPORARILY
-  console.log('MERGED RULES:', rules);
-
   const prompt = buildPrompt(text, level, rules);
 
   const completion = await groq.chat.completions.create({
