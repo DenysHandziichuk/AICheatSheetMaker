@@ -24,33 +24,36 @@
 
 ## 🧭 Simple Workflow
 
-1. Enter your topic or notes into the input field
+1. Enter your notes or topic description
 2. Select the desired complexity level and output length
-3. Click the generate button to create your cheat sheet
-4. Review and edit your cheat sheet as needed
-5. Use the **Copy** button to copy your cheat sheet to the clipboard
+3. Click generate to create your cheat sheet
+4. Edit or copy your cheat sheet as needed
+5. Regenerate your cheat sheet if desired
 
 ---
  
 
 ## 🎯 Purpose
 
-The purpose of **AI Cheat Sheet Maker** is to provide a simple and efficient way to create structured cheat sheets for studying and quick revision. By leveraging AI-powered generation, users can quickly create high-quality cheat sheets tailored to their needs.
+The AI Cheat Sheet Maker is designed to help students and individuals quickly create structured cheat sheets for studying and revision.
 
 ---
  
 
 ## 🧩 Installation & Usage
 
-Clone the repository:
-
-```bash
+To run the project locally, follow these steps:
+ 
 git clone https://github.com/DenysHandziichuk/AICheatSheetMaker
 cd AICheatSheetMaker
-```
+npm install
+npm run dev
+
+Then, open your web browser and navigate to http://localhost:{{PORT}}.
 
 ---
+ 
 
 ## 🛠️ Tech Stack
 
-The **AI Cheat Sheet Maker** is built using a modern tech stack, including React and @theme-toggles/react for a seamless user experience. The project also utilizes prettier for code formatting and maintenance. With a focus on readability and performance, the tech stack is designed to support the app's core features and provide a solid foundation for future development.
+The AI Cheat Sheet Maker is built using modern web technologies, including React and Vite, with a focus on readability, speed, and control. The project utilizes the @theme-toggles/react library for theme toggling and Prettier for code formatting.
