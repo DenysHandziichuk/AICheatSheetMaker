@@ -35,7 +35,7 @@
 
 ## 🎯 Purpose
 
-The purpose of **AI Cheat Sheet Maker** is to provide a simple and efficient way to create structured cheat sheets for studying and quick revision. With its minimal UI and fast AI-powered generation, it helps users to focus on the content and retain information more effectively.
+The purpose of **AI Cheat Sheet Maker** is to provide a simple and efficient way to create structured cheat sheets for studying and quick revision. By leveraging AI-powered generation, users can quickly create high-quality cheat sheets tailored to their needs.
 
 ---
  
@@ -49,9 +49,8 @@ git clone https://github.com/DenysHandziichuk/AICheatSheetMaker
 cd AICheatSheetMaker
 ```
 
-
 ---
 
 ## 🛠️ Tech Stack
 
-The **AI Cheat Sheet Maker** is built using modern web technologies, including React and Vite, with a focus on readability, speed, and control. It also utilizes the **@theme-toggles/react** library for theme toggling and **prettier** for code formatting. The app is designed to be fully responsive and accessible on various devices.
+The **AI Cheat Sheet Maker** is built using a modern tech stack, including React and @theme-toggles/react for a seamless user experience. The project also utilizes prettier for code formatting and maintenance. With a focus on readability and performance, the tech stack is designed to support the app's core features and provide a solid foundation for future development.
