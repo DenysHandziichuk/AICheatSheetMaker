@@ -1,11 +1,9 @@
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/react-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
 # 🧠📄 AI Cheat Sheet Maker
 
 **AI Cheat Sheet Maker** is a clean, modern web app that transforms any topic or raw notes into **clear, structured cheat sheets** for studying and quick revision. Designed with a **minimal, distraction-free UI**, it focuses on readability, speed, and control. Visit https://github.com/DenysHandziichuk/AICheatSheetMaker to learn more about the project.
 
-![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/react-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-
- 
 ## ✨ Key Features
 
 * 📝 Paste notes or explain a topic in your own words
@@ -19,7 +17,6 @@
 * 🌗 Global theme toggle (light / dark)
 * 📱 Fully responsive layout
 
- 
 ---
  
 
@@ -27,18 +24,17 @@
 
 1. Enter your notes or topic description
 2. Select the desired complexity level and output length
-3. Click generate to create your cheat sheet
+3. Click Generate to create your cheat sheet
 4. Review, edit, and copy your cheat sheet as needed
+5. Regenerate your cheat sheet with a single click
 
- 
 ---
  
 
 ## 🎯 Purpose
 
-The AI Cheat Sheet Maker is designed to help students and individuals quickly create structured cheat sheets for studying and revision, making it easier to absorb and retain information.
+The AI Cheat Sheet Maker is designed to help students, professionals, and anyone looking to create quick and easy reference materials. By providing a simple and intuitive interface, it aims to make studying and revision more efficient and effective.
 
- 
 ---
  
 
@@ -46,10 +42,9 @@ The AI Cheat Sheet Maker is designed to help students and individuals quickly cr
 
 To use the AI Cheat Sheet Maker, simply visit https://github.com/DenysHandziichuk/AICheatSheetMaker and start creating your cheat sheets. No installation is required, as the app is accessible directly in your web browser.
 
- 
 ---
  
 
 ## 🛠️ Tech Stack
 
-The AI Cheat Sheet Maker is built using a modern tech stack, including React and @theme-toggles/react, with a focus on readability, speed, and control. The project also utilizes prettier for code formatting, ensuring a clean and maintainable codebase.
+The AI Cheat Sheet Maker is built using modern web technologies, including React and Vite, with a focus on performance, readability, and maintainability. The app also utilizes the @theme-toggles/react library for theme toggling and Prettier for code formatting.
