@@ -32,7 +32,7 @@ To get started with AI Cheat Sheet Maker, follow these steps:
 git clone https://github.com/DenysHandziichuk/AICheatSheetMaker
 cd AICheatSheetMaker
 ```
-Then, install the dependencies and start the development server:
+Then, install the required dependencies and start the application:
 ```bash
 npm install
 npm run dev
