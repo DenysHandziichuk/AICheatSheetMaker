@@ -23,7 +23,7 @@ AI Cheat Sheet Maker is a clean, modern web app that transforms any topic or raw
 
 ---
 ## 🎯 Purpose
-The purpose of AI Cheat Sheet Maker is to provide a simple and efficient way to create structured cheat sheets for studying and quick revision, utilizing AI-powered generation for speed and control.
+The purpose of AI Cheat Sheet Maker is to provide a simple and efficient way to create structured cheat sheets for studying and quick revision, leveraging the power of AI to transform raw notes into clear and readable content.
 
 ---
 ## 🧩 Installation & Usage
@@ -32,7 +32,7 @@ To get started with AI Cheat Sheet Maker, follow these steps:
 git clone https://github.com/DenysHandziichuk/AICheatSheetMaker
 cd AICheatSheetMaker
 ```
-Then, install the required dependencies and start the application:
+Install the required dependencies and start the application:
 ```bash
 npm install
 npm run dev
