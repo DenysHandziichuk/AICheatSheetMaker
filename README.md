@@ -6,25 +6,24 @@ AI Cheat Sheet Maker is a clean, modern web app that transforms any topic or raw
 ---
 ## ✨ Key Features
 - 📝 Paste notes or explain a topic in your own words
-- 🎓 Select complexity level (Basic / Academic / Formal)
-- 📏 Control output length (Short / Medium / Long)
 - ⚡ Fast AI-powered generation
+- 📏 Control output length 
 - 🦴 Skeleton loading screen for smooth feedback
 - ✏️ Editable, readable results
 - 📋 One-click Copy to clipboard
 - 🔄 Try Again to regenerate instantly
-- 🌗 Global theme toggle (light / dark)
+- 🌗 Global theme toggle 
 - 📱 Fully responsive layout
 
 ---
 ## 🧭 Simple Workflow
 1. Enter your notes or topic description
-2. Configure the output settings as needed
-3. Generate the cheat sheet using the AI-powered tool
+2. Configure the output settings
+3. Generate the cheat sheet
 
 ---
 ## 🎯 Purpose
-The purpose of AI Cheat Sheet Maker is to provide a simple and efficient way to create structured cheat sheets for studying and quick revision, leveraging the power of AI to generate high-quality content.
+The purpose of AI Cheat Sheet Maker is to provide a simple and efficient way to create structured cheat sheets for studying and quick revision, leveraging the power of AI to transform raw notes into clear and readable content.
 
 ---
 ## 🧩 Installation & Usage
