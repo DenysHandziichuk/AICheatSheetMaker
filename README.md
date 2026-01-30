@@ -16,21 +16,21 @@ AICheatSheetMaker is a clean, modern web app that transforms any topic or raw no
 * ✏️ Editable, readable results
 * 📋 One-click Copy to clipboard
 * 🔄 Try Again to regenerate instantly
-* 🌗 Global theme toggle 
-* 📱 Fully responsive layout
+* 🌗 Global theme toggles
 
 ---
 ## 🧭 Simple Workflow
 1. Open the AICheatSheetMaker app
-2. Paste your notes or select a topic to generate a cheat sheet
-3. Adjust the output settings to customize your cheat sheet
-4. Generate the cheat sheet
-5. Review and edit the results as needed
-6. Copy or export the cheat sheet for future reference
+2. Paste your notes or explain a topic in your own words
+3. Adjust the output length to your preference
+4. Click Generate to create your cheat sheet
+5. Review and edit your cheat sheet as needed
+6. Use the one-click Copy to clipboard feature to save your work
+7. Regenerate your cheat sheet instantly with the Try Again feature
 
 ---
 ## 🎯 Purpose
-The purpose of AICheatSheetMaker is to provide a simple and efficient way to create structured cheat sheets from raw notes or topic descriptions, making it easier to study and review complex information.
+AICheatSheetMaker is designed to help users create clear, structured cheat sheets for studying and quick revision, making it easier to learn and retain new information.
 
 ---
 ## 🧩 Installation & Usage
@@ -39,13 +39,13 @@ To get started with AICheatSheetMaker, follow these steps:
 git clone https://github.com/DenysHandziichuk/AICheatSheetMaker
 cd AICheatSheetMaker
 ```
-Then, install the dependencies and run the application:
+Then, install the required dependencies and start the app:
 ```bash
 npm install
 npm run dev
 ```
-Access the app by visiting `http://localhost:3000` in your web browser.
+Open your web browser and navigate to `http://localhost:3000` to access the AICheatSheetMaker app.
 
 ---
 ## 🛠️ Tech Stack
-AICheatSheetMaker is built using modern frontend technologies, including React and Vite, to provide a fast and responsive user experience.
+AICheatSheetMaker is built using modern frontend technologies, including React and Vite, with a focus on readability, speed, and control.
